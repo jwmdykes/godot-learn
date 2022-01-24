@@ -30,8 +30,7 @@ jobs:
       - name: HTML5 Build
         run: |
           mkdir -v -p build/web
-          cd $EXPORT_NAME
-          godot -v --export "HTML5" ../build/web/index.html
+          godot -v --export "HTML5" ./build/web/index.html
       # Install rsync in order to use deploy to GitHub Pages Action from the store
       - name: Install rsync 📚
         run: |
